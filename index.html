@@ -3,17 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Data Science</title>
+  <title>Francisco Rodríguez Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     :root {
-      --primary-color: #554b13;
+      --primary-color: #9b6700;
       --bg-color: #f4f4f4;
       --text-color: #333;
       --accent-color: #c2b280;
     }
+    #sobre-mi {
+      scroll-margin-top: 120px;
+    }
 
+    #proyectos {
+      scroll-margin-top: 120px;
+    }
+    
     * {
       margin: 0;
       padding: 0;
@@ -51,10 +58,15 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      border: 2px solid white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: white;
+      color: var(--primary-color);
     }
 
     section {
@@ -105,10 +117,17 @@
       color: var(--primary-color);
       text-decoration: none;
       font-weight: bold;
+      border: 2px solid var(--primary-color);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 0.5rem;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     .project a:hover {
-      text-decoration: underline;
+      background-color: var(--primary-color);
+      color: white;
     }
 
     .contact-info {
@@ -118,6 +137,11 @@
 
     .contact-info p, .contact-info a {
       font-size: 1.1rem;
+    }
+
+    .contact-info i {
+      margin-right: 0.5rem;
+      color: var(--primary-color);
     }
 
     footer {
@@ -146,7 +170,7 @@
 </head>
 <body>
   <header>
-    <h1>Mi Portfolio - Data Science & BI</h1>
+    <h1>Francisco Rodríguez - Data Science & BI</h1>
     <p>Analista de Datos | Científico de Datos | Business Intelligence</p>
     <nav>
       <ul>
@@ -171,21 +195,27 @@
     <h2>Proyectos Destacados</h2>
     <div class="project-grid">
       <div class="project">
+        <!-- TODO: agregar imagenes
         <img src="ruta_a_imagen_proyecto_1.jpg" alt="Análisis de Netflix">
+        -->
         <h3>Análisis de Datos de Netflix</h3>
         <p>Exploración y visualización de datos usando pandas, seaborn y matplotlib. Insights sobre tipos de contenido, años de lanzamiento y categorías populares.</p>
         <p><a href="https://github.com/usuario/proyecto-netflix" target="_blank">Ver en GitHub</a></p>
       </div>
 
       <div class="project">
+        <!-- TODO: agregar imagenes
         <img src="ruta_a_imagen_proyecto_2.jpg" alt="Churn Prediction">
+        -->
         <h3>Modelo Predictivo de Churn</h3>
         <p>Modelo de machine learning con scikit-learn para predecir pérdida de clientes. Incluye preprocesamiento, selección de variables y métricas como ROC-AUC.</p>
         <p><a href="https://github.com/usuario/proyecto-churn" target="_blank">Ver en GitHub</a></p>
       </div>
 
       <div class="project">
+        <!-- TODO: agregar imagenes
         <img src="ruta_a_imagen_proyecto_3.jpg" alt="Dashboard de Ventas">
+        -->
         <h3>Dashboard de Ventas</h3>
         <p>Visualización de KPIs de ventas usando Power BI con filtros dinámicos por región, categoría y canal. Proyecto enfocado en la toma de decisiones.</p>
         <p><a href="https://github.com/usuario/dashboard-ventas" target="_blank">Ver en GitHub</a></p>
@@ -198,18 +228,18 @@
     <p style="text-align:center">¿Te interesa colaborar o tienes una propuesta profesional? ¡Contáctame!</p>
     <div class="contact-info">
       <p><i class="fas fa-envelope"></i> <strong>tucorreo@email.com</strong></p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
-      <p><i class="fab fa-github"></i> <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/francisco-rodr%C3%ADguez-778717280/" target="_blank">linkedin.com/in/francisco-rodriguez</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/nickgulp" target="_blank">github.com/nickgulp</a></p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Francisco Rodríguez. Todos los derechos reservados.</p>
     <div class="social-icons">
-      <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:tucorreo@email.com"><i class="fas fa-envelope"></i></a>
-    </div>
+      <a href="https://github.com/nickgulp" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/francisco-rodr%C3%ADguez-778717280/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>  
+    <a href="mailto:tucorreo@email.com"><i class="fas fa-envelope"></i></a>
   </footer>
 </body>
 </html>
