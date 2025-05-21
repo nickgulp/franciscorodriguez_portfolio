@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Data Science</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #554b13;
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --accent-color: #c2b280;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      border: 1px solid var(--primary-color);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .project a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--primary-color);
+      color: white;
+      margin-top: 4rem;
+    }
+
+    .contact-info {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Portfolio - Data Science & BI</h1>
+    <p>Analista de Datos | Científico de Datos | Business Intelligence</p>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      ¡Hola! Soy un apasionado del análisis de datos y la inteligencia de negocios. Trabajo con herramientas como Python, SQL, Power BI y Tableau para transformar datos en decisiones. Me especializo en EDA, visualizaciones y modelos predictivos.
+    </p>
+    <p>
+      Este portfolio muestra algunos de mis proyectos personales y lo que soy capaz de construir. ¡Bienvenido!
+    </p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+
+    <div class="project">
+      <img src="ruta_a_imagen_proyecto_1.jpg" alt="Proyecto 1">
+      <h3>Análisis de Datos de Netflix</h3>
+      <p>Exploración de un dataset de títulos de Netflix utilizando pandas, seaborn y matplotlib. Incluye visualizaciones interactivas en Tableau Public.</p>
+      <p><a href="https://github.com/usuario/proyecto-netflix" target="_blank">Ver en GitHub</a> | <a href="https://public.tableau.com/app/profile/usuario/viz/netflix" target="_blank">Dashboard</a></p>
+    </div>
+
+    <div class="project">
+      <img src="ruta_a_imagen_proyecto_2.jpg" alt="Proyecto 2">
+      <h3>Modelo Predictivo de Churn</h3>
+      <p>Modelo de clasificación con scikit-learn para predecir pérdida de clientes en una empresa de telecomunicaciones. Incluye validación cruzada y métricas.</p>
+      <p><a href="https://github.com/usuario/proyecto-churn" target="_blank">Ver en GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <img src="ruta_a_imagen_proyecto_3.jpg" alt="Proyecto 3">
+      <h3>Dashboard de Ventas con Power BI</h3>
+      <p>Dashboard interactivo con segmentación por producto, región y canal. Datos de ventas ficticios. Ideal para análisis de desempeño comercial.</p>
+      <p><a href="https://github.com/usuario/dashboard-ventas" target="_blank">Ver en GitHub</a> | <a href="https://app.powerbi.com/view?r=dashboard_link" target="_blank">Ver Dashboard</a></p>
+    </div>
+
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Te interesa colaborar o tienes una propuesta profesional? ¡Contáctame!</p>
+    <div class="contact-info">
+      <p>Email: <strong>tucorreo@email.com</strong></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
+      <p>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
